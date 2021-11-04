@@ -33,7 +33,7 @@ year = {2019}
 
 Monodepth2 can be installed through pip 
 ```bash
-pip install git+https://github.com/AdityaNG/monodepth2@pip-module
+pip install monodepth2
 ```
 
 Run the webcam demo with :
@@ -49,7 +49,11 @@ md = monodepth2()
 depth = md.eval(frame)
 ```
 
+## Install Latest Version (Might be unstable)
 
+```bash
+pip install git+https://github.com/AdityaNG/monodepth2@pip-module
+```
 ## ⚙️ Setup
 
 Assuming a fresh [Anaconda](https://www.anaconda.com/download/) distribution, you can install the dependencies with:
