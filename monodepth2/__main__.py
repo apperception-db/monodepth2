@@ -8,9 +8,10 @@ import matplotlib as mpl
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 
-import networks
-from layers import disp_to_depth
-from utils import download_model_if_doesnt_exist, monodepth2_models_path
+#from .networks import *
+from . import networks
+from .layers import disp_to_depth
+from .utils import download_model_if_doesnt_exist, monodepth2_models_path
 
 MODEL_NAMES = [
     "mono_640x192",

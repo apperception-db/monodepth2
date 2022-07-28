@@ -8,7 +8,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setuptools.setup(
     name="monodepth2",
     version="1.0.0",
-    packages=['.', 'networks'],
+    packages=['monodepth2'],
     scripts=[],
     license='LICENSE',
     url='https://github.com/AdityaNG/monodepth2',
