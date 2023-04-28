@@ -47,7 +47,8 @@ def sec_to_hm_str(t):
     h, m, s = sec_to_hm(t)
     return "{:02d}h{:02d}m{:02d}s".format(h, m, s)
 
-monodepth2_models_path = os.path.join(os.path.expanduser('~'), '.monodepth2_models')
+XDG_CACHE_HOME = os.environ.get('XDG_CACHE_HOME', os.path.expanduser('~/.cache'))
+monodepth2_models_path = os.path.join(XDG_CACHE_HOME, 'monodepth2_models')
 
 def download_model_if_doesnt_exist(model_name):
     """If pretrained kitti model doesn't exist, download and unzip it
